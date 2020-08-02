@@ -1,6 +1,6 @@
 {
   "name": "psongpin-react-lib",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -10,7 +10,7 @@
     "build"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rm -rf build && rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -45,6 +45,7 @@
     "rollup": "^2.23.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.1",
+    "tailwindcss": "^1.6.0",
     "ts-loader": "^8.0.1",
     "typescript": "^3.9.7"
   },
@@ -52,5 +53,8 @@
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "tailwindcss": ">=1.6.0"
+  },
+  "dependencies": {
+    "clsx": "^1.1.1"
   }
 }
